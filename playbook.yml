@@ -1,0 +1,25 @@
+---
+
+- hosts: all
+  vars:
+    created_username: ansible
+  tasks:
+  - name: Creating an empty file
+    file:
+      path: "/etc/sudoers.d/100-ansible-user"
+      state: touch
+
+  - name: Ansible insert lineinfile example
+    lineinfile:
+        dest: /etc/sudoers.d/100-ansible-user
+        line: "ansible ALL=(ALL) NOPASSWD:ALL"
+        state: present
+        create: yes
+
+
+  - name: Create a new regular user with sudo privileges
+    user:
+        name: "{{ created_username }}"
+        state: present
+        append: true
+        create_home: true
