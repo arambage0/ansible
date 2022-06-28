@@ -1,0 +1,5 @@
+https://github.com/ansible/ansible-examples/blob/master/tomcat-standalone/roles/tomcat/tasks/main.yml
+set hostname in ec2 instance 
+change the bash prompt in ec2 instance 
+https://github.com/amilovanovikj/Ansible-Exercise
+https://github.com/gkdevops/ansible-code/tree/master/playbooks
