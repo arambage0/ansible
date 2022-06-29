@@ -1,2 +1,3 @@
 Ansible operates under the assumption that you’re using SSH keys. It is strongly recommended and generally good practice to pair SSH key usage with disabling root password authentication.
 ssh public key can installed for any linux user under file authrorized_key file 
+Learn ssh-key , sudoor group in Redhat , sudo no password 
